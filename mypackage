@@ -1,0 +1,16 @@
+package mypackage
+
+import "fmt"
+
+type Employee struct {
+	ID   int
+	Name string
+}
+  
+func Greet(name string) {
+	fmt.Printf("Hello, %s!\n", name)
+}
+  
+func GetEmployee(id int) Employee {
+	return Employee{ID: id, Name: "John Doe"}
+}
